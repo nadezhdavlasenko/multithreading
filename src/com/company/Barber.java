@@ -30,6 +30,8 @@ public class Barber implements Runnable{
         try {
             System.out.println("barber cuts " + customer.getCustomerName());
             Thread.sleep((int)(Math.random() * 10));
-        } catch (Exception e) {}
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
